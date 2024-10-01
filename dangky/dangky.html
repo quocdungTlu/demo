@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Đăng ký tài khoản</h2>
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="ho">Họ</label>
+                <input type="text" id="ho" name="ho">
+                <span class="error" id="hoError"></span>
+            </div>
+            <div class="form-group">
+                <label for="ten">Tên</label>
+                <input type="text" id="ten" name="ten">
+                <span class="error" id="tenError"></span>
+            </div>
+            <div class="form-group">
+                <label for="username">Tên đăng nhập</label>
+                <input type="text" id="username" name="username">
+                <span class="error" id="usernameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input type="text" id="phone" name="phone">
+                <span class="error" id="phoneError"></span>
+            </div>
+            <hr>
+            <div class="form-actions">
+                <button type="button" onclick="resetForm()"><b>Quay lại</b></button>
+                <button type="submit">Đăng ký</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="/assets/css/script.js"></script>
+</body>
+</html>
